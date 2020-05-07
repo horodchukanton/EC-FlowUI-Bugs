@@ -1,0 +1,31 @@
+<!--
+    This form is generated automatically from the parameters pluginspec.
+    Please not not edit this file manually as it will be regenerated.
+-->
+<editor>
+  <help>/commander/pages/@PLUGIN_NAME@/help?s=Administration&amp;ss=Plugins#CEV21977</help>
+  <formElement>
+    <type>entry</type>
+    <property>applicationPath</property>
+    <required>1</required>
+    <documentation>Path to the application</documentation>
+    <label>Application Path:</label>
+    <value>/bin/sh</value>
+    <default>/bin/sh</default>
+  </formElement>
+  <formElement>
+    <type>entry</type>
+    <property>applicationParameters</property>
+    <htmlDocumentation>Parameters to be passed to the app, specified as name-value pairs, with 1 pair per line. <br/>If not specified, the default variables for the definition will be used. <br/>Example: <br/>
+<b>system.debug=true</b> <br/>
+<b>BuildConfiguration=debug</b> <br/>
+<b>BuildPlatform=x64</b>
+</htmlDocumentation>
+    <collection>1</collection>
+    <collectionEntrySeparator>\n</collectionEntrySeparator>
+    <collectionName>Parameter name</collectionName>
+    <collectionValue>Parameter value</collectionValue>
+    <collectionValueRequired>0</collectionValueRequired>
+    <collectionValueSeparator>=</collectionValueSeparator>
+  </formElement>
+</editor>
