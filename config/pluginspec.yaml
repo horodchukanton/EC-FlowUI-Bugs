@@ -7,7 +7,7 @@ pluginInfo:
   description: 'The plugin is made to help Flow UI team reproduce the bugs. It also contains time information of when the bug was found and fixed'
   author: 'none'
   supportUrl: 'none'
-  category: 'Utilities'
+  category: 'Utility'
   shell: 'ec-groovy'
 
 # Plugin configuration description
@@ -117,6 +117,10 @@ procedures:
       label: Application Path
 
     - name: applicationParameters
+      type: textarea
+      value: 'param1=value2
+param2=value2
+'
       htmlDocumentation: |
         Parameters to be passed to the app, specified as name-value pairs, with 1 pair per line. <br/>If not specified, the default variables for the definition will be used. <br/>Example: <br/>
         <b>system.debug=true</b> <br/>
@@ -128,4 +132,3 @@ procedures:
       collectionValueRequired : '0'
       collectionEntrySeparator : '\n'
       collectionValueSeparator : '='
-      value: 'param1=value2\nparam2=value2'

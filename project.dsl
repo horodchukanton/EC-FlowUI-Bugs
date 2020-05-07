@@ -7,7 +7,8 @@ project 'FlowUI-Bugs', {
     description = '''Run the pipeline, check that the value passed to the task is a single line value.
 
 Run the same procedure (EC-FlowUI-Bugs) as a procedure through the Platform Automation page (commander) (you have to create it in any project, as it is not exported to the DSL).
-Check that the value contains separate lines for each collection entry.'''
+Change the value (key-value pair should be on a different lines).
+Run the step and check that the value is passed as is.'''
     disableMultipleActiveRuns = '0'
     disableRestart = '0'
     enabled = '1'
