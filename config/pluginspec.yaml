@@ -99,3 +99,33 @@ procedures:
       collectionValueRequired : '0'
       collectionEntrySeparator : '\n'
       collectionValueSeparator : '='
+
+
+-
+  name: 'CEV-21967'
+  shell : 'ec-perl'
+  description: "03/06/19. FlowUI. Collection form element. CollectionEntrySeparator, newline separator is interpreted as a \\n"
+  hasConfig: false
+  parameters:
+    -
+      name: applicationPath
+      documentation: Path to the application
+      required: true
+      default: '/bin/sh'
+      value: '/bin/sh'
+      type: entry
+      label: Application Path
+
+    - name: applicationParameters
+      htmlDocumentation: |
+        Parameters to be passed to the app, specified as name-value pairs, with 1 pair per line. <br/>If not specified, the default variables for the definition will be used. <br/>Example: <br/>
+        <b>system.debug=true</b> <br/>
+        <b>BuildConfiguration=debug</b> <br/>
+        <b>BuildPlatform=x64</b>
+      collection: 1
+      collectionName : 'Parameter name'
+      collectionValue : 'Parameter value'
+      collectionValueRequired : '0'
+      collectionEntrySeparator : '\n'
+      collectionValueSeparator : '='
+      value: 'param1=value2\nparam2=value2'

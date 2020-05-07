@@ -66,6 +66,30 @@ class FlowUIBugs extends FlowPlugin {
         log.info("step CEV-21977 has been finished")
     }
 
+/**
+    * cEV21967 - CEV-21967/CEV-21967
+    * Add your code into this method and it will be called when the step runs
+    * @param applicationPath (required: true)
+    * @param applicationParameters (required: )
+    
+    */
+    def cEV21967(StepParameters p, StepResult sr) {
+
+        /* Log is automatically available from the parent class */
+        log.info(
+          "cEV21967 was invoked with StepParameters",
+          /* runtimeParameters contains both configuration and procedure parameters */
+          p.toString()
+        )
+
+        Context context = getContext()
+
+        sr.setJobStepSummary("Finished")
+        sr.setReportUrl("Sample Report", 'https://cloudbees.com')
+        sr.apply()
+        log.info("step CEV-21967 has been finished")
+    }
+
 // === step ends ===
 
 }
