@@ -6,7 +6,7 @@ This plugin is made to help Flow UI team to reproduce the bugs.
 1. Download the plugin build (build/EC-FlowUI-Bugs.zip)
 2. Install and promote the plugin
 3. Download and import the DSL (/project.dsl) 
-4. Find the pipeline with the name if issue you are working on in the 'FlowUI-Bugs' project.
+4. Find the pipeline with the name of issue you are working on in the 'FlowUI-Bugs' project.
 4. Follow the instructions in the pipeline description to reproduce the bug.
 
 ### Usage for the Plugin team (or any other person who has encountered Flow UI bug)
